@@ -1,0 +1,253 @@
+@media  (max-width:500px) and (min-width:320px){ /* это медиа-запрос, применяетсякогда ширина экрана меньше 500px и больше 320px */
+    
+    /* header */
+    .head-list{ /* Скрываем блок head-list */
+        display: none;
+    }
+    .header-list{
+        justify-content: center; /* Выравниваем элементы списка по центру */
+        margin-bottom: 20px; /* Отступ снизу */
+    }
+    .header-list li {
+        padding-right: 20px; /* отступ справа */ 
+    }
+    body{
+        width: 100%; /* ширина на весь экран*/
+        margin: 0; /* убирает все отступы */
+    }
+    .header{
+        width: 100%; /* ширина на весь экран*/
+        height: 100%; /* высота на весь блок*/
+    }
+    .media-slide-btn{
+        background-color: white; /* Цвет фона */
+        height: 60px; /* Высота блока */
+        max-width: 100%; /* ширина на весь экран*/
+        display: block; /* отображает скрытый блок*/
+        padding-left: 10px;  /* Отступ слева */
+        align-items: center; /* Выравниваем элементы по центру */
+        display: flex; /* Устанавливаем flexbox */
+        justify-content: space-between; /* Располагаем элементы по краям с равным пространством между ними */ 
+    }
+    .media-slide-btn-link{
+        display: flex; /* Устанавливаем flexbox */
+        width: 220px; /* Ширина блока */
+        justify-content: space-around ; /* Располагаем элементы по краям с равным пространством во всех отступах */ 
+    }
+    .header-media-btn{
+        background-color: #fff; /* Цвет фона */
+        background-image: url(../img/burger-menu-svgrepo-com.svg); /* Фоновое изображение */
+        border: none;  /* Убираем рамку */
+        height: 40px; /* Высота блока */
+        width: 40px; /* Ширина блока */
+        background-size: cover; /* Размер фонового изображения */
+        background-color: white; /* Цвет фона */
+        display: block; /* отображает скрытый блок*/
+    }
+    .header-btn{
+        font-size:75% ; /* Размер шрифта */
+        padding: 7px 11px ; /* Отступы */
+    }
+    .header-item-description-link:first-child{
+        padding-top: 10px; /* Отступ сверху */
+    }
+    .header-item-description-link{
+        padding-bottom: 10px; /* Отступ снизу */
+    }
+    .header-slide{
+        background-color: white; /* Цвет фона */
+        width: 100%; /* Ширина блока */
+        height: 200px; /* Высота блока */
+        border-bottom-left-radius: 20px; /* Закругленный угол снизу слева */
+        border-bottom-right-radius: 20px; /* Закругленный угол снизу справа */
+        position: absolute; /* Позиционирование */
+        padding-left: 10px; /* Отступ слева */
+    }
+    .header-list-img{
+        width: 100%; /* Ширина блока */
+    }
+    .header-number, .header-nav-item-link{
+        font-size: 75%; /* Размер шрифта */
+    }
+    .header-nav-item:first-child {
+        margin-right: 0; /*  Убираем отступ справа */
+    }
+    .header-image-link{
+        width: 174px; /* Ширина блока */
+    }
+    .header-nav-item-link{
+        background-image: none; /* Убираем фоновое изображение */
+        padding: 0; /* Убираем отступ */
+    }
+
+
+    /* hero */
+    .hero-title{
+        font-size: 30px;
+    }
+    .hero-list{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero-list li {
+        margin-bottom: 20px;
+    }
+
+    .hero-item-link-three{
+        margin: 0;
+    }
+    .hero-item-description,.hero-item-description-three{
+        width: 95%;
+        height: 200px;
+        margin: 0 auto;
+        border-radius: 15px;
+    }
+    .hero-item-description-three{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-content: space-evenly;
+    }
+    .hero-item-title, .hero-item-title-three{
+        font-size: 25px;
+    }
+    .hero-item-title-three{
+        width: 100%;
+    }
+    .hero-list {
+        height: 100%;
+    }
+    .hero-price-three, .hero-price{
+        font-size: 15px;
+    }
+
+
+    /* about-us */
+    .about-us {
+        width: 95%;
+    }
+    .title {
+        font-size: 30px;
+    }
+    .about-us-description {
+        line-height: 160%;
+    }
+
+
+    /* services */
+    .services {
+        margin: 0 auto;
+        width: 95%;  
+    }
+    .services-item,.services-items{
+        width: 100%;
+    }
+    .services-item-description{
+        line-height: 160%;
+    }
+    .services-items {
+        margin-bottom: 20px;
+    }
+    .services-list{
+        height: auto;
+    }
+
+
+    /* benefits */
+    .benefits{
+        margin: 0 auto;
+        width: 95%;
+        margin-bottom: 20px;
+    }
+    .benefits-list{
+        height: auto;
+        gap: 15px;
+        
+    }
+    .benefits-item{
+        width: auto;
+        height: 200px;
+    }
+
+
+    /* place */
+    .place{
+        margin: 0 auto;
+        width: 95%;
+        margin-bottom: 20px;
+    }
+    .place-list{
+        height: auto;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+
+    /* tour */
+    .tour{
+        height: auto;
+        margin: 0 auto;
+        width: 95%;
+        background-color: transparent;
+        margin-bottom: 20px;
+    }
+    .tour-list {
+        height: 420px;
+        flex-direction: column; 
+    }
+    .tour-ul{
+        margin: 0 auto;
+        width: 95%;
+    }
+    .tour-title{
+        margin: 15px auto;
+    }
+    /* .tour-items{
+      
+    } */
+
+
+    /* contacts */
+    
+    .contacts{
+        width: 95%;
+        margin-bottom: 20px;
+    }
+
+    .contacts-img{
+        display: none;
+       
+    }
+
+    /* footer */
+
+    .footer {
+        height: 500px;
+        flex-direction: column;
+        background-image: none;
+        background-color: #333333;
+        width: 100%;
+        border-radius: 15px;
+    }
+
+    .footer-conteiner{
+        width: 80%;
+    }
+
+    .footer li,p,a{
+        font-size: 14px;
+    }
+
+    .footer-list:last-child{
+        display: block;
+    }
+
+    .footer-icons{
+        margin-top: 10px;
+        display: flex;
+        flex-direction: row;
+        width: 50%;
+        justify-content: space-between;
+    }
+}
